@@ -11,6 +11,11 @@ body{
 }
 
 
+.our__works{
+  margin: 0 0 100px 0;
+}
+
+
 .container{
   width: 1200px;
   margin: 0 auto;
@@ -141,6 +146,8 @@ h1{
   transition: background-color .2s linear;
   max-width: 200px;
   max-height: 50px;
+  min-width: 200px;
+  min-height: 50px;
 }
 
 
@@ -392,21 +399,6 @@ position: relative;
 
 /*OUR_WORKS
 ==================== */
-.our__works{
-
-}
-
-
-.works__wrapper{
-
-}
-
-
-.works__title__block{
-
-}
-
-
 .works__title{
   font-size: 148px;
   font-weight: 900;
@@ -441,4 +433,155 @@ position: relative;
 }
 
 /* /OUR_WORKS
+==================== */
+
+
+
+/* CONTACTS
+==================== */
+.contacts{
+  padding: 100px 0;
+  background-color: #171616;
+}
+
+
+.contacts .block__title{
+  margin-bottom: 40px;
+}
+
+
+.text__white{
+  color: #fff;
+}
+
+
+
+.contacts__form{
+ max-width: 440px;
+}
+
+
+.form__row{
+ margin: 0 -20px;
+ display: flex;
+}
+
+
+.form__group{
+ padding: 0 20px;
+ flex: 1;
+ position: relative;
+ margin-bottom: 30px;
+}
+
+
+.input{
+ width: 100%;
+ border-bottom: 1px solid #fff;
+ background-color: transparent;
+ color: #fff;
+ padding: 9px 0;
+ font-size: 15px;
+ font-family: "Poppins",sans-serif;
+}
+
+
+.label{
+  letter-spacing: .15em;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  pointer-events: none;
+  transition: all .2s linear;
+}
+
+
+.input:focus + .label{
+  transform: translateY(-15px);
+  font-size: 12px;
+}
+
+
+.input:not(:placeholder-shown) + .label{
+  transform: translateY(-15px);
+  font-size: 12px;
+}
+
+
+.textarea{
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 9px 0;
+  font-size: 15px;
+  font-family: "Poppins",sans-serif;
+}
+
+
+.textarea:focus + .label{
+  transform: translateY(-15px);
+  font-size: 12px;
+}
+
+
+.textarea:not(:placeholder-shown) + .label{
+  transform: translateY(-15px);
+  font-size: 12px;
+}
+
+
+.btn__contacts{
+  text-transform: uppercase;
+}
+/* /CONTACTS
+==================== */
+
+
+
+/* FOOTER
+==================== */
+.footer{
+
+}
+
+
+.foother__wrapper{
+display: flex;
+height: 150px;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.foother__social{
+ display: flex;
+ margin-right: 20px;
+}
+
+
+.foother__link:last-child{
+ margin-right: 0;
+}
+
+
+.foother__link{
+ margin-right: 20px;
+}
+
+
+.foother__link img{
+height: 25px;
+}
+
+
+.copyright{
+letter-spacing: .15em;
+
+}
+
+/* /FOOTER
 ==================== */
