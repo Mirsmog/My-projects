@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
   <link rel="icon" type="image/png" href="img/icon.png">
   <title>Car repair</title>
 </head>
@@ -55,14 +56,14 @@
   <section class="intro" style="background-image: url('img/intro/background.jpg');">>
     <div class="container">
       <div class="intro__wrapper">
-        <div class="intro__title">
-          <h1>KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST</h1>
-        </div>
-        <!-- intro__title -->
+       <div class="intro__block">
+          <h1 class="h1">KEEPING YOU ON THE ROAD WITH SERVICE YOU CAN TRUST</h1>
         <div class="intro__btn">
           <button class="btn__intro  btn  btn__red  " type="button" name="button">Show more</button>
           <!-- /intro__btn -->
-        </div>
+         </div>
+        <!-- /intro__block -->
+      </div>
         <!-- /intro__wrapper -->
       </div>
       <!-- /container -->
@@ -113,7 +114,7 @@
     <div class="container">
       <div class="services__block">
         <h2 class="block__title">OUR SERVICES</h2>
-        <a href="#" class="block__link">VIEW ALL SERVICES</a>
+        <div class="div_link"><a href="#" class="block__link">VIEW ALL SERVICES</a></div>
         <!-- /services__block -->
       </div>
 
@@ -178,10 +179,7 @@
           <!-- /about__block__title -->
         </div>
         <div class="about__block__photo">
-          <div class="img__block__about">
-            <img class="img_about" src="img/about.jpg" alt="repair" width="513" height="342">
-            <!-- /img__block__about -->
-          </div>
+            <img class="img_about" src="img/about.jpg" alt="repair">
           <!-- /about__block__photo -->
         </div>
         <!-- /about__wrapper -->
@@ -198,34 +196,37 @@
         <h3 class="works__subtitle">our work process</h3>
         <!-- /works__title__block -->
       </div>
-      <div class="wrapper">
-        <div class="block">
-          <div class="works__item">
-            <h4 class="info__title">1.Request your quote</h4>
-            <p class="info__text">We will be there when you most need us</p>
-            <!-- /works__item -->
+      <div class="workss__block">
+        <div class="wrapper">
+          <div class="block">
+            <div class="works__item">
+              <h4 class="info__title">1.Request your quote</h4>
+              <p class="info__text">We will be there when you most need us</p>
+              <!-- /works__item -->
+            </div>
+            <!-- /block -->
           </div>
-          <!-- /block -->
-        </div>
 
-        <div class="block">
-          <div class="works__item">
-            <h4 class="info__title">02. BRING YOUR VEHICLE</h4>
-            <p class="info__text">We are car guys at heart</p>
-            <!-- /works__item -->
+          <div class="block">
+            <div class="works__item">
+              <h4 class="info__title">02. BRING YOUR VEHICLE</h4>
+              <p class="info__text">We are car guys at heart</p>
+              <!-- /works__item -->
+            </div>
+            <!-- /block -->
           </div>
-          <!-- /block -->
-        </div>
 
-        <div class="block">
-          <div class="works__item">
-            <h4 class="info__title">03. GET IT REPAIRED</h4>
-            <p class="info__text">High quality, low cost car servicing</p>
-            <!-- /works__item -->
+          <div class="block">
+            <div class="works__item">
+              <h4 class="info__title">03. GET IT REPAIRED</h4>
+              <p class="info__text">High quality, low cost car servicing</p>
+              <!-- /works__item -->
+            </div>
+            <!-- /block -->
           </div>
-          <!-- /block -->
+          <!-- /container -->
         </div>
-        <!-- /container -->
+        <!--/workss__block -->
       </div>
   </section>
 
@@ -271,7 +272,7 @@
         </div>
          <!-- /form__row -->
       </div>
-      <button class="btn__red  btn__intro  btn__contacts" type="submit">send</button>
+      <div class="btn__phone"><button class="btn__red  btn__intro  btn__contacts" type="submit">send</button></div>
     </form>
     <!--/container  -->
    </div>
