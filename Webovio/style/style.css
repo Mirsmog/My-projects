@@ -1,0 +1,156 @@
+@import url("fonts.css");
+
+body{
+ font-family: "Poppins", sans-serif;
+ font-weight: 400;
+}
+
+
+.container{
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.link:hover{
+  color: #FFD723;
+}
+
+
+.link{
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  color: #D4D6D4;
+  transition: color .2s linear;
+}
+
+
+.link svg{
+  width: 12px;
+  height: 12px;
+  fill: currentcolor;
+  transform: translateY(1px);
+}
+
+
+.link span{
+  text-indent: 8px;
+  border-bottom: 1px solid currentcolor;
+}
+
+
+.btn-reset{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Poppins",sans-serif;
+  font-weight: 400;
+}
+
+/* HEADER-START
+==================== */
+.header{
+  padding: 24px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.burger{
+  --offset-horizontal: 11px;
+  --offset-vertical: 14px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: var(--offset-vertical) var(--offset-horizontal);
+  background-color: #F5F6F7;
+  border-radius: 50%;
+
+}
+
+
+.burger-line{
+  position: absolute;
+  left: 50%;
+  top: var(--offset-vertical);
+  display: inline-block;
+  width: calc(100% - (var(--offset-horizontal) * 2));
+  height: 2px;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+
+
+.burger-line:nth-child(2) {
+  top: calc(var(--offset-vertical) + 6px)
+}
+
+
+.burger-line:nth-child(3) {
+  top: calc(var(--offset-vertical) + 12px)
+}
+/* HEADER-END
+==================== */
+
+
+
+/* HERO-START
+==================== */
+.hero{
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 189px 0 100px ;
+  min-height: 811px;
+}
+
+
+.hero-content{
+  max-width: 616px;
+}
+
+
+.hero-subtitle{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+
+.hero-title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 74px;
+  color: #fff;
+}
+
+
+.hero-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 45px;
+
+}
+/* HERO-START
+==================== */
