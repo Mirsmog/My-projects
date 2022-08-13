@@ -235,9 +235,9 @@ body{
   top: 180px;
 }
 
-.container__get-started{
+/* .container__get-started{
   padding-left: 221px;
-}
+} */
 
 .get-started-title {
   max-width: 822px;
@@ -350,6 +350,12 @@ body{
   line-height: 40px;
   color: #B6C197;
   display: inline-block;
+  transition: color .2s linear;
+}
+
+
+.footer-item-link:hover{
+  color: #ffd722
 }
 
 
@@ -407,7 +413,7 @@ body{
 
 
 .social-item-link:hover{
-  background-color: rgb(255, 215, 34);
+  background-color: #ffd722;
 }
 
 
@@ -445,6 +451,7 @@ body{
   font-size: 14px;
   line-height: 21px;
   color: #B5C096;
+
 }
 /* FOOTER-END
 ==================== */
