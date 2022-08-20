@@ -2,6 +2,7 @@ body{
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
   color: #333;
+  font-size: 10px;
 }
 
 /* container
@@ -23,6 +24,7 @@ body{
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
 
 }
 
@@ -628,7 +630,7 @@ hr{
 ==================== */
 .reviews{
   padding: 70px 110px;
-  margin-bottom: 110px;
+  margin: 110px 0;
 }
 
 
@@ -904,12 +906,14 @@ hr{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0;
+  margin-bottom: 100px;
 }
 
 
 .clients__wrapper{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
@@ -920,18 +924,8 @@ hr{
 }
 
 
-.clients__wrapper {
-
-}
-
-
 .clients__item {
   margin-bottom: 70px;
-}
-
-
-.clients__content {
-
 }
 
 
@@ -969,7 +963,6 @@ hr{
   font-weight: 400;
   color: #999;
   line-height: 1.5em;
-
 }
 
 
@@ -984,6 +977,132 @@ hr{
 }
 
 
+/* blog-start
+==================== */
+.blog__wrapper {
+  display: flex;
+  margin-bottom: 120px;
+}
 
-/* clients-end
+
+.blog .section__header{
+  margin-bottom: 50px;
+}
+
+
+.blog__header a{
+  display: inline-block;
+}
+
+
+.blog__item {
+  width: 33.33333%;
+}
+
+
+.blog__item:not(:last-child){
+  margin-right: 15px;
+}
+
+
+.blog__header {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+
+.blog__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.blog__data {
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+  background-color: #95e1d3;
+  z-index: 10;
+  color: #fff;
+  line-height: 1;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+
+.date-number {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.month{
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Roboto",sans-serif;
+  font-size: 15px;
+}
+
+
+.blog__content {
+ color: #333;
+ margin-bottom: 15px;
+}
+
+
+.blog__content a:hover{
+  text-decoration: underline;
+  color: #333;
+}
+
+
+.blog__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 15px;
+  display: inline-block;
+
+}
+
+
+.blog__text {
+  font-family: "Roboto".sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5em;
+}
+
+
+.blog__footer {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+  font-style: italic;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 15px;
+}
+
+
+
+.blog-stat__item{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+
+.blog__stat .fa-solid{
+  margin-right: 5px;
+  color: #bfede4;
+  font-size: 15px;
+}
+
+
+
+/* blog-end
 ==================== */
