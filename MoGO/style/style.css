@@ -9,7 +9,8 @@ body{
 ==================== */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -208,7 +209,7 @@ body{
 .slider__item.active::before{
   content: "";
   display: block;
-  width: 70px;
+  width: 50%;
   height: 3px;
   background-color: #f38181;
   position: absolute;
@@ -234,7 +235,7 @@ body{
 ==================== */
 .about-us{
   background-color: #fff;
-  padding: 90px 0 0;
+  padding: 90px 0;
 }
 
 
@@ -286,12 +287,13 @@ body{
 .card{
   display: flex;
   justify-content: space-between;
-  padding-bottom: 110px;
+  margin-bottom: 110px;
+
 }
 
 
 .card__item{
-  width: 33%;
+  width: 33.33333%;
 }
 
 
@@ -324,6 +326,7 @@ body{
 
 .card__img img{
   width: 100%;
+  height: auto;
   display: block;
   transition: opacity .1s linear;
 }
@@ -377,6 +380,7 @@ body{
 
 
 .stat{
+  flex-wrap: wrap;
   display: flex;
 }
 
@@ -431,10 +435,17 @@ hr{
 
 
 .services__item{
-  flex: 1 1 0;
+  width: 33.33333%;
   padding-left: 85px;
   padding-right: 35px;
   position: relative;
+  margin-bottom: 40px;
+}
+
+
+.services__item--br-bm{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
 }
 
 
@@ -490,6 +501,8 @@ hr{
 
 .devices__item{
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -498,6 +511,7 @@ hr{
   bottom: -90px;
   right: -80px;
   z-index: 10;
+
 
 }
 
@@ -522,13 +536,23 @@ hr{
 
 .we-do__wrapper{
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
   margin-bottom: 120px;
 
 }
 
 
+.we-do__img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 .we-do__item{
   width: 50%;
+  padding: 0 15px;
 }
 
 /* accordion
@@ -662,6 +686,9 @@ hr{
 
 
 .reviews__photo{
+  display: block;
+  width: 210px;
+  height: 210px;
   position: absolute;
   top: -50%;
   left: 0;
@@ -801,8 +828,15 @@ hr{
 }
 
 
-.logos__wrapper{
-  padding: 70px 0;
+.logos__img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.logos__item{
+  padding: 0 15px;
 }
 
 
@@ -810,6 +844,8 @@ hr{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 70px 0;
+  margin: 0 -15px;
 }
 /* team-end
 ==================== */
@@ -863,7 +899,7 @@ hr{
 .works__img{
   transition: opacity .2s linear;
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1175,6 +1211,13 @@ hr{
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+
+.footer__col{
+  padding: 0 15px;
 }
 
 
@@ -1359,19 +1402,20 @@ hr{
 .instagram{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
 .instagram__item{
-  width: 33.33333%;
-  flex: 1 1 0;
-  border: 2px solid #ccc;
-  border-bottom: 0;
+  width: 33%;
+  border-bottom: 1px solid #fff;
 }
 
 
 .instagram__item img{
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 

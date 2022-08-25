@@ -1,0 +1,559 @@
+/* MEDIA 1230-PX
+==================== */
+@media (max-width: 1230px) {
+    /* intro */
+    .intro__title{
+        font-size: 120px;
+    }
+
+
+    .intro__suptitile{
+        font-size: 52px;
+    }
+
+
+    /* revievs */
+    .reviews__photo{
+        top: -35%;
+    }
+
+
+    .reviews__text{
+        font-size: 20px;
+    }
+}
+
+
+
+/* MEDIA 990-PX
+==================== */
+@media (max-width: 990px) {
+    /* Intro */
+    .intro__title{
+        font-size: 80px;
+    }
+
+
+    .intro__title::after{
+        margin: 40px auto 40px;
+    }
+
+
+    .intro__suptitile{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Stat */
+    .stat{
+        justify-content: center;
+    }
+
+
+    .stat__item{
+        flex: none;
+        width: 33.33333%;
+        border: 0;
+        padding: 30px 0;
+    }
+
+
+    .stat__item:last-child{
+        border-right: 0;
+    }
+
+
+    /* About-us */
+    .about-us{
+        padding-bottom: 20px;
+    }
+
+
+    /* Services */
+    .services{
+        margin-top: 70px;
+    }
+
+
+    /* services */
+    .services__item{
+        width: 50%;
+
+    }
+
+
+    .services__item--br-bm{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+    /* Revievs */
+    .reviews__photo{
+        width: 150px;
+        height: 150px;
+        top: -15%;
+    }
+
+
+    .reviews__item{
+        padding-left: 175px;
+    }
+
+
+    .reviews{
+        padding: 40px 60px;
+    }
+
+
+    /* Clients */
+    .clients__wrapper{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .clients__item{
+        width: 100%;
+        padding-right: 0;
+    }
+
+
+    /* Footer */
+    .footer__col--first{
+        width: 100%;
+    }
+
+
+    .footer__col--second,
+    .footer__col--third{
+        width: 50%;
+    }
+
+
+    /* Istagram */
+    .instagram{
+        justify-content: flex-start;
+    }
+
+
+    .instagram__item{
+        width: auto;
+        border-right: 1px solid #fff;
+    }
+
+
+    .instagram__text{
+        padding:  30px 14px;
+        max-width: 89px;
+        margin-top: 0;
+    }
+}
+
+
+
+/* MEDIA 800-PX
+==================== */
+@media (max-width: 800px) {
+    /* Nav */
+    .nav{
+        display: none;
+    }
+}
+
+
+
+/* MEDIA 770-PX
+==================== */
+@media (max-width: 770px) {
+    /* Slider */
+    .slider__text{
+        display: none;
+    }
+
+
+    /* Card */
+    .card{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+
+    .card__item{
+        min-width: 410px;
+        margin-bottom: 30px;
+    }
+
+
+    .card__item:not(:last-child){
+        margin-right: 0px;
+    }
+
+
+    /* About-us */
+    .about-us{
+        padding: 40px 0 0;
+    }
+
+
+    /* Section__header */
+    .section__header{
+        margin-bottom: 40px;
+    }
+
+
+    /* services */
+    .services-block{
+        justify-content: center;
+    }
+
+
+    .services__item{
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+
+    .services__img{
+        left: 0;
+    }
+
+
+    .services{
+        margin-bottom: 60px;
+    }
+
+
+    .devices__item--iphone{
+        right: -14px;
+    }
+
+
+    /* We-do */
+    .we-do__img{
+        display: none;
+    }
+
+
+    .we-do__item{
+        width: 100%;
+    }
+
+
+    /* Revievs */
+    .reviews__photo{
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
+    .reviews__item{
+        padding-left: 0;
+    }
+
+
+    .reviews__text{
+        font-size: 16px;
+    }
+
+
+    .reviews__author{
+        font-size: 20px;
+    }
+
+
+    .reviews__btn{
+        top: 20%;
+
+    }
+
+
+    .reviews__btn--next{
+        right: 40px;
+    }
+
+
+    .reviews__btn--prev{
+        left: 40px;
+    }
+
+
+    /* Works */
+
+    .works__wrapper{
+        flex-wrap: wrap;
+    }
+
+
+    .works-col{
+        flex: none;
+        width: 50%;
+    }
+
+
+    /* Clients */
+    .clients{
+        padding: 60px 0;
+        margin-bottom: 50px;
+    }
+
+
+    .clients__item:last-child{
+        margin-bottom: 0px;
+    }
+
+
+    /* blog */
+    .blog{
+        max-width:380px ;
+        margin: 0 auto;
+    }
+
+
+    .blog__wrapper{
+        flex-wrap: wrap;
+    }
+
+
+    .blog__item{
+        width: 100%;
+    }
+
+
+    .blog__item:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+
+    /* Footer */
+    .footer__col--second,
+    .footer__col--third{
+        width: 100%;
+    }
+}
+
+
+
+/* MEDIA 575-PX
+==================== */
+@media (max-width: 575px) {
+    /* Intro */
+    .intro__title{
+        font-size: 44px;
+    }
+
+
+    .intro__suptitile{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+
+    /* section__header */
+    .section__header{
+        margin: 0 auto 60px;
+    }
+
+
+    .section__title{
+        font-size: 24px;
+    }
+
+
+    .section__title::after{
+        margin: 20px auto;
+    }
+
+
+    .section__suptitle{
+        font-size: 20px;
+    }
+
+
+    /* Stat */
+    .stat__item{
+        width: 100%;
+    }
+
+
+    .stat-num{
+        font-size: 52px;
+    }
+
+
+    .stat__item:not(:last-child){
+        border-bottom: 1px solid #b5eae0;
+    }
+
+
+    /* Card */
+    .card__item{
+        min-width: 310px;
+    }
+
+
+    /* Devices */
+    .design{
+        padding-top: 50px;
+    }
+
+
+    .section__header__design--bp{
+        margin-bottom: 30px;
+    }
+
+
+    .devices-block{
+        max-width: 330px;
+    }
+
+
+    .devices__item--iphone{
+        width: 180px;
+        bottom: -50px;
+        left: 125px;
+    }
+
+
+    /* We-do */
+    .we-do{
+        margin-top:40px ;
+    }
+
+
+    .we-do__wrapper{
+        margin-bottom: 50px;
+    }
+
+
+    /* Reviews  */
+    .reviews{
+        padding: 20px 0;
+        margin: 0 0 60px;
+    }
+
+
+    .reviews__btn--next{
+        right: 50px;
+    }
+
+
+    .reviews__btn--prev{
+        left: 50px;
+    }
+
+
+    /* Logos */
+    .logos{
+        margin-bottom: 50px;
+    }
+
+
+    .logos__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .logos__item{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+
+    .logos__img{
+        margin: 0 auto;
+    }
+
+
+    /* Card */
+    .card__team-pb{
+        padding-bottom: 0;
+    }
+
+
+    /* Works */
+    .works-col{
+        width: 100%;
+    }
+
+
+    /* Clients */
+    .clients__photo{
+        position: static;
+    }
+
+
+    .clients__item{
+        padding: 0;
+        text-align: center;
+    }
+
+
+    .clients__prof::after{
+        margin: 15px auto;
+    }
+
+
+    /* Subscribe */
+    .form-subscribe{
+        flex-wrap: wrap;
+        max-width: none;
+    }
+
+    .subscribe__btn,
+    .subscribe__input{
+        width: 100%;
+    }
+
+
+    .subscribe__input{
+        margin-bottom: 15px;
+        border: 1px solid #e7e7e7;
+    }
+
+
+    .subscribe__btn{
+        margin-bottom: 20px;
+    }
+
+
+    /* Blog */
+    .blogs-link{
+        font-size: 10px;
+    }
+
+
+    .blog__wrapper{
+        margin-bottom: 60px;
+    }
+
+
+    /* Footer */
+    .footer{
+        padding-top: 50px;
+    }
+
+
+    .footer__logo{
+        font-size: 40px;
+    }
+
+
+    /* Services */
+    .services{
+        margin: 20px 0;
+    }
+
+
+    /* Istagram */
+    .instagram{
+        justify-content: center;
+    }
+}
