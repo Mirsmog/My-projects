@@ -24,6 +24,19 @@
 }
 
 
+/* MEDIA 1080-PX
+==================== */
+@media (max-width: 1080px) {
+    /* Card */
+    .card__text--team{
+        opacity: 1;
+        top: 88%;
+    }
+
+}
+
+
+
 
 /* MEDIA 990-PX
 ==================== */
@@ -93,7 +106,7 @@
     .reviews__photo{
         width: 150px;
         height: 150px;
-        top: -15%;
+        top: 10%;
     }
 
 
@@ -149,17 +162,47 @@
         max-width: 89px;
         margin-top: 0;
     }
-}
 
 
+     /* Nav */
+     .nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #edbe88;
+        width: 100%;
+    }
 
-/* MEDIA 800-PX
-==================== */
-@media (max-width: 800px) {
-    /* Nav */
-    .nav{
+
+    .nav__link{
+        display: block;
+        margin: 0;
+        padding: 5px 20px;
+        text-align: center;
+    }
+
+
+    .nav__link:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+
+    .nav__link:not(:last-child){
+        margin-right: 0;
+    }
+
+
+    .nav__link::before {
         display: none;
     }
+
+
+    .nav__toggle{
+        display: block;
+    }
+
+
 }
 
 
@@ -267,18 +310,18 @@
     }
 
 
-    .reviews__btn{
+    .slick-arrow{
         top: 20%;
 
     }
 
 
-    .reviews__btn--next{
+    .slick-next{
         right: 40px;
     }
 
 
-    .reviews__btn--prev{
+    .slick-prev{
         left: 40px;
     }
 
@@ -334,6 +377,12 @@
     .footer__col--second,
     .footer__col--third{
         width: 100%;
+    }
+
+
+    /* Intro */
+    .intro{
+        min-height: 650px;
     }
 }
 
@@ -397,6 +446,12 @@
     }
 
 
+    .card__text--team{
+        opacity: 1;
+        top: 92%;
+    }
+
+
     /* Devices */
     .design{
         padding-top: 50px;
@@ -438,12 +493,12 @@
     }
 
 
-    .reviews__btn--next{
+    .slick-next{
         right: 50px;
     }
 
 
-    .reviews__btn--prev{
+    .slick-prev{
         left: 50px;
     }
 
@@ -556,4 +611,7 @@
     .instagram{
         justify-content: center;
     }
+
+
+
 }

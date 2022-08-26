@@ -38,8 +38,25 @@ body{
   top: 0;
   left: 0;
   z-index: 999;
-  padding-top: 30px;
+  padding: 15px 0;
   color: #fff;
+}
+
+
+.header.fixed{
+  background-color: #e98283;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+
+.header.active{
+  background-color: #e98283;
 }
 
 
@@ -95,8 +112,91 @@ body{
 }
 
 
+.nav__link.active{
+  color: #fce38a;
+}
+
+
 .nav__link:hover::before{
   opacity: 1;
+}
+
+
+/* nav__toggle */
+.nav__toggle{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  width: 30px;
+  padding: 10px 0;
+  background-color: transparent;
+  display: none;
+}
+
+
+.nav__toggle__item{
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 0;
+  transition: background .2s linear;
+
+}
+
+
+.nav__toggle__item::before,
+.nav__toggle__item::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+
+.nav__toggle__item::before{
+  top: -8px;
+}
+
+
+.nav__toggle__item::after{
+  bottom: -8px;
+}
+
+
+.nav__toggle.active .nav__toggle__item{
+  background: none;
+}
+
+
+.nav__toggle.active .nav__toggle__item::before{
+  transform-origin: left top;
+  transform: rotate(45deg)
+  translateX(-2px);
+  transition: transform .2s linear;
+}
+
+
+.nav__toggle.active .nav__toggle__item::after{
+  transform-origin: left bottom;
+  transform: rotate(-45deg)
+  translateX(-3px);
+  transition: transform .2s linear;
+}
+
+
+.nav.active{
+  display: block;
 }
 
 
@@ -115,10 +215,12 @@ body{
   justify-content: center;
   width: 100%;
   height: 100vh;
+  min-height: 820px;
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 
@@ -671,6 +773,7 @@ hr{
 .reviews__item{
   padding-left: 255px;
   position: relative;
+  min-height: 210px;
 }
 
 
@@ -690,7 +793,7 @@ hr{
   width: 210px;
   height: 210px;
   position: absolute;
-  top: -50%;
+  top: 0;
   left: 0;
   z-index: 10;
   border-radius: 50%;
@@ -718,17 +821,18 @@ hr{
 }
 
 
-.reviews__btn{
+.slick-arrow{
   font-size: 0;
   color: transparent;
   position: absolute;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
+  background-color: transparent;
 }
 
 
-.reviews__btn::after{
+.slick-arrow::after{
   content: "";
   display: block;
   width: 14px;
@@ -743,13 +847,13 @@ hr{
 
 
 
-.reviews__btn--prev{
+.slick-prev{
   left: -60px;
   transform: rotate(-85deg);
 }
 
 
-.reviews__btn--next{
+.slick-next{
   right: -60px;
   transform: rotate(85deg);
 }
