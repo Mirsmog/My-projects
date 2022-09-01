@@ -24,6 +24,36 @@ body{
 }
 
 
+.block__header{
+
+}
+
+
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 67px;
+    color: #fff;
+}
+
+
+.text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+}
+
+
+
+
+main{
+    background-image: url("/CraftPC/img/mainBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*  HEADER-START
 ==================== */
 .header{
@@ -62,6 +92,30 @@ body{
 .header__btn{
     background: linear-gradient(90deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
     transition: color .1s linear;
+    position: relative;
+    z-index: 100;
+
+}
+
+
+.header__btn::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-color: #7c6afa;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+
+.header__btn:hover:after{
+    opacity: 1;
 }
 
 
@@ -141,6 +195,7 @@ body{
 
 .order{
     background-color: #121212;
+    margin-bottom: 200px;
 }
 
 
@@ -155,12 +210,37 @@ body{
 .intro__btn{
     background: linear-gradient(90deg, rgba(223,89,80,1) 0%, rgba(69,16,70,1) 100%);
     transition: color .1s linear;
+    position: relative;
+    z-index: 100;
 }
 
 
-.intro__btn:hover{
-    color: rgb(0, 0, 0)
+/* .intro__btn:hover{
+    color: rgb(124, 106, 250);
+} */
+
+
+.intro__btn::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-color: #9b394c;
+    opacity: 0;
+    transition: opacity .1s linear;
 }
+
+
+.intro__btn:hover:after{
+    opacity: 1;
+}
+
+
 
 
 .participant{
@@ -231,4 +311,168 @@ body{
 
 
 /*  INTRO-END
+==================== */
+
+
+
+
+/*  WHAT_WE_DO-START
+==================== */
+.do__wrapper{
+    display: flex;
+    gap: 140px;
+    margin-bottom: 200px;
+}
+
+
+.do__image{
+    width: 525px;
+    height: 500px;
+    border: 20px solid;
+    border-image: linear-gradient(90deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
+    border-image-slice: 1;
+    position: relative;
+
+}
+
+
+.do-img{
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    z-index: 100;
+    width: 100%;
+    max-width: 446px;
+    height: auto;
+    max-height: 446px;
+}
+
+
+.do__block{
+    max-width: 630px;
+}
+
+
+.do__title{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+
+/*  WHAT_WE_DO-END
+==================== */
+
+
+
+
+/*  FAST_START-START
+==================== */
+.fast__title__block{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+
+.fast__title{
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+
+
+.load{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: 100;
+}
+
+
+.text__fast{
+    max-width: 410px;
+    opacity: .5;
+}
+
+
+.fast__start{
+    display: flex;
+
+}
+
+
+.fast__item{
+    width: 25%;
+}
+
+
+.fast__start__text{
+    opacity: .5;
+    width: 306px;
+    font-size: 14px;
+}
+
+
+.prosent{
+    position: relative;
+    margin-bottom: 140px;
+}
+
+
+.prosent__1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 90px;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(90deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
+
+}
+
+
+.prosent__2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 100px;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(250deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
+
+}
+
+
+.prosent__3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    top: 115px;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(90deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
+
+}
+
+
+.prosent__4::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    left: 0px;
+    top: 125px;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(250deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
+
+}
+
+
+/*  FAST-START-END
 ==================== */
