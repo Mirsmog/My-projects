@@ -879,7 +879,11 @@ main{
     right: 10px;
     z-index: 100;
     background: linear-gradient(90deg, rgba(223,89,80,1) 0%, rgba(69,16,70,1) 100%);
+}
 
+
+.btn--footer:hover{
+    outline: 1px solid #fff;
 }
 
 
@@ -894,6 +898,11 @@ main{
     padding: 12px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50%;
+}
+
+
+.social__item:hover{
+    outline: 3px solid #fff;
 }
 
 
