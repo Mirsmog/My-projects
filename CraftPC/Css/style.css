@@ -53,6 +53,7 @@ main{
 /*  HEADER-START
 ==================== */
 .header{
+    padding: 0 15px;
     width: 100%;
     position: absolute;
     top: 40px;
@@ -140,8 +141,8 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
     padding-top: 250px;
+    height: 100vh;
 }
 
 
@@ -278,6 +279,11 @@ main{
 }
 
 
+.earned{
+    width: 50%;
+}
+
+
 .earned__sub-block span{
     color: #fff;
     opacity: .4;
@@ -289,7 +295,7 @@ main{
     border-top: 6px solid #fff;
     display: flex;
     justify-content: space-between;
-    width: 714px;
+    width: 100%;
     position: relative;
 }
 
@@ -297,7 +303,7 @@ main{
 .earned__sub-block::after{
     position: absolute;
     content: "";
-    width: 440px;
+    width: 60%;
     height: 6px;
     top: -6px;
     left: 0;
@@ -321,26 +327,11 @@ main{
 }
 
 
-.do__image{
-    width: 525px;
-    height: 500px;
-    border: 20px solid;
-    border-image: linear-gradient(90deg, rgb(200, 154, 252) 0%, rgb(124, 106, 250) 100%);
-    border-image-slice: 1;
-    position: relative;
-
-}
-
 
 .do-img{
-    position: absolute;
-    top: 75px;
-    left: 20px;
-    z-index: 100;
     width: 100%;
-    max-width: 446px;
     height: auto;
-    max-height: 446px;
+    min-width: 400px;
 }
 
 
@@ -536,6 +527,11 @@ main{
 }
 
 
+.partners__wrapper{
+    display: block;
+}
+
+
 .partners--title{
     display: inline-block;
     margin-left: 120px;
@@ -583,6 +579,12 @@ main{
 .partners__item {
     padding: 30px 65px;
     border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+
+.partners__item__img{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -674,7 +676,7 @@ main{
     content: "";
     display: block;
     width: 40px;
-    height: 1px;
+    height: 2px;
     top: 45px;
     right: -75px;
     z-index: 100;
@@ -688,7 +690,7 @@ main{
     content: "";
     display: block;
     width: 40px;
-    height: 1px;
+    height: 2px;
     top: 45px;
     left: -80px;
     z-index: 100;
@@ -919,4 +921,176 @@ main{
 
 
 /*  FOOTER-END
+==================== */
+
+
+
+
+
+
+
+
+/* MEDIA-1200PX
+==================== */
+@media (max-width: 1200px) {
+    /* intro */
+    .intro{
+
+    }
+
+    /* do */
+    .do-img{
+        left: 0;
+        top: 40px;
+    }
+
+    .do__image{
+        height: 400px;
+    }
+
+
+    /* partners */
+    .partners__item__img{
+
+    }
+}
+
+
+/* MEDIA-1024PX
+==================== */
+@media (max-width: 1024px) {
+    /* header */
+    .nav__link:not(:last-child){
+        margin-right: 35px;
+    }
+
+
+    /* intro */
+    .intro__title{
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+
+    /* do */
+    .do__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .do__block{
+        text-align: center;
+    }
+
+
+    /* order */
+    .order{
+        margin-bottom: 150px;
+    }
+
+
+
+    /* fast */
+    .fast__start__text{
+        width: 100%;
+    }
+
+    .fast__start{
+        margin-bottom: 150px;
+    }
+
+
+    /* getwork */
+    .getwork{
+        margin-bottom: 150px;
+    }
+
+    .getwork__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getwork__subtitle{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+/* MEDIA-900PX
+==================== */
+@media (max-width:900px) {
+    /* header */
+    .nav{
+        display: none;
+    }
+
+    .header__wrapper{
+        justify-content: space-between;
+    }
+
+
+    .header__btn{
+        display: none;
+    }
+
+
+
+    /* order */
+    .order__wrapper{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .earned{
+        width: 100%;
+    }
+
+    .intro__btn{
+        order: 3;
+    }
+
+    .participant{
+
+    }
+
+
+    /* partners */
+    .partners__item__inner-top{
+        flex-wrap: wrap;
+        border: 0;
+        border-right: 1px solid rgba(255, 255, 255, .3); ;
+    }
+
+    .partners__item{
+        width: 100%;
+        border: 0;
+    }
+
+    .partners__item__inner-bottom{
+        flex-wrap: wrap;
+    }
+
+    .partners__item__inner-bottom .partners__item:not(:last-child){
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .partners__item__inner-top .partners__item:not(:last-child){
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .partners__wrapper{
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+
+/* MEDIA-END
 ==================== */
