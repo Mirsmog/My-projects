@@ -1,0 +1,16 @@
+/* Global */
+.btn{
+    background-color: transparent;
+}
+
+
+/* Glofal-var */
+:root{
+    --bg-color: rgb(50, 197, 99);
+}
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: #333;
+}
