@@ -1,10 +1,28 @@
 /* Global */
 
 
+
+/* var */
+:root{
+    /* color */
+    --white-color: #fff;
+
+    /* btn */
+    --btn-color: #3671E9;
+
+    /* description-color */
+    --description-color: #E0E0E0;
+
+    /* primary-color */
+    --primary-color: #0D0D2B;
+}
+
+
+
 /* btn */
 .btn{
     background-color: transparent;
-    padding: 14px 32px;
+    padding: 16px 32px;
     background-color: var(--btn-color);
     border-radius: 32px;
     color: var(--white-color);
@@ -21,6 +39,8 @@
     margin: 0 auto;
     max-width: 1200px;
 }
+
+
 /* life-btn */
 .life-btn{
     background-color: var(--btn-color);
@@ -55,16 +75,6 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: transform .1s linear;
-}
-
-
-/* Glofal-var */
-:root{
-    /* color */
-    --white-color: #fff;
-
-    /* btn */
-    --btn-color: #3671E9;
 }
 
 
@@ -195,3 +205,209 @@ body{
     margin-bottom: 42px;
 }
 /* HERO-END */
+
+
+
+/* ADVANTAGE-START */
+.advantage{
+    height: 105vh;
+    background: url(/img/advantage/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.advantage__items-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.advancetage__item__img{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .1);
+    position: absolute;
+    top: -10px;
+    left: -100px;
+    z-index: 100;
+
+}
+
+.advancetage__item-img--pt{
+    padding: 4px;
+}
+
+.advancetage__item{
+    display: flex;
+    position: relative;
+    margin-left: 100px ;
+}
+
+.advantage__item-suptitle{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.advantage__item-text{
+    color: var(--description-color);
+    font-size: 16px;
+}
+
+.advantage__intro-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.advantage__intro-img {
+
+}
+
+.advantage__intro-info {
+    max-width: 470px;
+    /* margin-top: -20px; */
+
+}
+
+.advantahe__intro-title {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.advantage__intro-text {
+    color: var(--description-color);
+    line-height: 28px;
+    max-width: 408px;
+    margin-bottom: 30px;
+
+}
+
+.advantage__intro-btn {
+
+}
+
+
+/* ADVANTAGE-END */
+
+
+
+
+/* CALCULATOR-START */
+.calculator{
+    background: var(--primary-color);
+    padding: 100px 0 220px;
+    position: relative;
+}
+
+.calculator__wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.calc-title{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calc-text{
+    font-size: 18px;
+    color: var(--description-color);
+    max-width: 540px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.calculator__suptitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calc-inner__wrapper{
+    background-color: var(--white-color);
+    width: 80%;
+    border-radius: 14px;
+    filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+    position: absolute;
+    z-index: 100;
+    top: 293px;
+}
+
+.calc-input {
+    width: 400px;
+    border-bottom: 1px solid var(--description-color);
+    padding: 8px 0;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.calc-input::-moz-placeholder{
+    opacity: 1;
+}
+
+.calc-select {
+    width: 200px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--description-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.calculator__inner-top{
+    padding: 62px 62px 50px;
+    display: flex;
+    justify-content: space-between;
+    background: #FBFCFE;
+    border-radius: 14px 14px 0 0;
+}
+
+.calc__inner-bottom {
+    padding: 52px 62px;
+}
+.inner-bottom__suptitle {
+    text-transform: uppercase;
+    color: var(--btn-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.inner-bottom__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 48px;
+    margin-bottom: 12px;
+}
+
+.inner-bottom__subtitle span{
+    color: var(--btn-color);
+}
+
+.calc-description {
+    color: #828282;
+
+}
+
+/* CALCULATOR-END */
+
+
+
+/* TRADE-START */
+    .trade{
+        padding-top: 340px;
+    }
+
+
+/* TRADE-END */
