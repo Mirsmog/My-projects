@@ -22,7 +22,7 @@
 /* btn */
 .btn{
     background-color: transparent;
-    padding: 16px 32px;
+    padding: 18px 32px;
     background-color: var(--btn-color);
     border-radius: 32px;
     color: var(--white-color);
@@ -40,15 +40,21 @@
     max-width: 1200px;
 }
 
+.main-title{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
 
 /* life-btn */
 .life-btn{
     background-color: var(--btn-color);
     color: var(--white-color);
-    padding: 16px 72px 16px 24px;
+    padding: 18px 72px 18px 24px;
     border-radius: 32px;
     position: relative;
-    max-width: 200px;
+    max-width: 210px;
     font-size: 18px;
     transition: background .1s linear;
 }
@@ -69,7 +75,7 @@
     background-color: var(--white-color);
     position: absolute;
     right: 12px;
-    top: 10px;
+    top: 12px;
     border-radius: 50%;
     background-image: url(/img/hero/str.svg);
     background-position: center;
@@ -275,9 +281,6 @@ body{
 }
 
 .advantahe__intro-title {
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -315,9 +318,6 @@ body{
 }
 
 .calc-title{
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -338,7 +338,7 @@ body{
 
 .calc-inner__wrapper{
     background-color: var(--white-color);
-    width: 80%;
+    width: 60%;
     border-radius: 14px;
     filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
     position: absolute;
@@ -347,7 +347,7 @@ body{
 }
 
 .calc-input {
-    width: 400px;
+    width: 50%;
     border-bottom: 1px solid var(--description-color);
     padding: 8px 0;
     color: var(--primary-color);
@@ -359,7 +359,7 @@ body{
 }
 
 .calc-select {
-    width: 200px;
+    width: 20%;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--description-color);
     background-color: transparent;
@@ -407,6 +407,102 @@ body{
 /* TRADE-START */
     .trade{
         padding-top: 340px;
+        background: #F8F9FB;
+        padding-bottom: 100px;
+    }
+
+    .trade__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trade__title{
+        color: var(--primary-color);
+        text-align: center;
+        width: 740px;
+        margin-bottom: 64px;
+    }
+
+    .trade__inner-cripto{
+        width: 100%;
+        display: flex;
+        gap: 45px;
+
+    }
+
+    .cripto__item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #2B076E;
+        width: 33.33333%;
+        padding: 48px 24px;
+        border-radius: 16px;
+        backdrop-filter: blur(125px);
+        /* box-shadow: 0px 40px 40px #391777; */
+
+    }
+
+    .cripto__item--bg{
+        background-color: var(--white-color);
+    }
+
+    .cripto-img{
+        margin-bottom: 48px;
+    }
+
+    .cripto-name{
+        font-size: 32px;
+        font-weight: 700;
+        position: relative;
+        margin-right: 40px;
+        margin-bottom: 16px;
+
+    }
+
+    .cripto-name--c{
+        color: var(--primary-color);
+    }
+
+    .cripto-name span{
+        top: 9px;
+        right: -40px;
+        z-index: 100;
+        position: absolute;
+        font-size: 18px;
+        font-weight: 500;
+        color: #BDBDBD;
+    }
+
+    .cripto-description{
+        color: var(--primary-color);
+        opacity: .7;
+        line-height: 28px;
+        letter-spacing: 1%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .cripto-description--c{
+        color: var(--white-color);
+        opacity: .7;
+    }
+
+    .cripto-btn{
+      padding: 32px;
+      background-color: var(--white-color);
+      border-radius: 50%;
+      border: 1px solid #828282;
+      background: url("/img/hero/str.svg");
+      background-position: 27px;
+      background-size: 20%;
+      background-repeat: no-repeat;
+      transition: transform .1s linear;
+    }
+
+    .cripto-btn:hover{
+        transform: rotate(90deg);
     }
 
 
