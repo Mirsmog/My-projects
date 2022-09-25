@@ -28,6 +28,7 @@
     color: var(--white-color);
     transition: background .1s linear;
     text-transform: capitalize;
+    max-width: 148px;
 }
 
 .btn:hover{
@@ -507,3 +508,139 @@ body{
 
 
 /* TRADE-END */
+
+
+
+/* INFO-START */
+.info{
+    background: url(/img/info/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 100px;
+}
+
+.info__title{
+    text-align: center;
+    width: 750px;
+    margin-bottom: 100px;
+}
+
+.info__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__item{
+    width: 100%;
+    display: flex;
+    /* gap: 46px; */
+    margin-bottom: 120px;
+    justify-content: space-between;
+
+}
+
+.item-intro--or{
+    order: -1;
+    padding-top: 40px;
+}
+
+.item-intro__suptitle{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+
+.item-intro__description{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1%;
+    color: var(--description-color);
+    margin-bottom: 48px;
+    width: 400px;
+}
+
+.item-intro--fx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-intro--pt{
+    padding-top: 30px;
+}
+
+/* INFO-END */
+
+
+
+/* MINING-START */
+.mining{
+    background: url(/img/mining/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.mining__wrapper{
+    display: flex;
+    justify-content: space-between;
+    background: url(/img/mining/mining-bg.png);
+    border-radius: 16px;
+    padding: 48px;
+    align-items: center;
+}
+
+.mining__title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+
+.mining__description{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1%;
+    opacity: .7;
+    width: 350px;
+}
+
+.mining__input{
+    width: 70%;
+    padding: 8px 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    line-height: 0;
+    height: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.mining__input::placeholder{
+    color: #fff;
+}
+
+.mining__btn{
+    background-color: #fff;
+    color: #000;
+    transition: all .1s linear;
+}
+
+.mining__btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.mining-form{
+    display: flex;
+    width: 50%;
+    gap: 30px;
+}
+
+
+
+/* MINING-END */
