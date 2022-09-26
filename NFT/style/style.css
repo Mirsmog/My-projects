@@ -47,6 +47,12 @@
     font-weight: 700;
 }
 
+.footer,
+.main{
+    margin: 0;
+    padding: 0;
+}
+
 
 /* life-btn */
 .life-btn{
@@ -117,6 +123,11 @@ body{
     color: var(--white-color);
 }
 
+.header__link:hover{
+    color: var(--btn-color);
+    transition: color .1s linear;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -124,11 +135,11 @@ body{
 
 .nav__link{
     color: var(--white-color);
-    transition: opacity .1s linear;
+    transition: color .1s linear;
 }
 
 .nav__link--op:hover{
-    opacity: .5;
+    color: var(--btn-color);
 }
 
 .nav__link:not(:last-child){
@@ -642,5 +653,114 @@ body{
 }
 
 
-
 /* MINING-END */
+
+
+
+/* FOOTER-START */
+.footer{
+    background: var(--primary-color);
+}
+
+.footer__Wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footer__link{
+    display: flex;
+    gap: 130px;
+    justify-content: space-between;
+}
+
+.logo__wrapper{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    margin-right: 16px;
+}
+
+.footer__link-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item-title{
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+.footer__link-item{
+    font-size: 16px;
+    font-weight: 400;
+    color: #F2F2F2;
+    line-height: 38px;
+    transition: color .1s linear;
+}
+
+.footer__link-item:hover{
+    color: var(--btn-color);
+}
+
+.footer__pay-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    width: 355px;
+    margin-bottom: 40px;
+}
+
+.footer__pay-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay__item{
+    display: flex;
+    padding: 8px 24px;
+    background-color: rgba(49, 48, 48, .2);
+    border-radius: 8px;
+    width: 96px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 80px;
+}
+
+.copyright{
+    color: var(--white-color);
+    opacity: .7;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.social__items:hover{
+    opacity: .5;
+
+}
+
+
+
+
+/* FOOTER-END */
