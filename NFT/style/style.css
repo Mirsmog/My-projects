@@ -39,6 +39,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
+    padding: 0 15px;
 }
 
 .main-title{
@@ -191,6 +192,15 @@ body{
     margin-bottom: 24px;
 }
 
+.intro-img{
+    width: 100%;
+    height: auto;
+}
+
+.intro__info{
+    width: 50%;
+}
+
 .intro__img{
     margin-top: -100px;
 }
@@ -283,7 +293,8 @@ body{
 }
 
 .advantage__intro-img {
-
+    width: 100%;
+    height: auto;
 }
 
 .advantage__intro-info {
@@ -410,6 +421,17 @@ body{
 .calc-description {
     color: #828282;
 
+}
+
+.calc-choose__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.calc__btn{
+    margin-left: 40px;
 }
 
 /* CALCULATOR-END */
@@ -557,6 +579,10 @@ body{
     padding-top: 40px;
 }
 
+.item-intro{
+    width: 50%;
+}
+
 .item-intro__suptitle{
     font-weight: 700;
     font-size: 32px;
@@ -578,10 +604,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .item-intro--pt{
     padding-top: 30px;
+}
+
+.info__item--wh{
+    justify-content: space-between;
+}
+
+.info-img{
+    width: 100%;
+    height: auto;
 }
 
 /* INFO-END */
@@ -601,6 +638,9 @@ body{
     display: flex;
     justify-content: space-between;
     background: url(/img/mining/mining-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 16px;
     padding: 48px;
     align-items: center;
@@ -760,7 +800,413 @@ body{
 
 }
 
-
-
-
 /* FOOTER-END */
+
+
+/* MEDIA-1100PX-START */
+@media (max-width: 1100px) {
+    /* hero */
+    .hero__title{
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    /* advantage */
+    .advantahe__intro-title{
+        margin-bottom: 10px;
+    }
+
+    /* main */
+    .main-title{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .cripto-description{
+        font-size: 15px;
+    }
+}
+
+/* MEDIA-1100PX-END */
+
+
+/* MEDIA-1000PX-SRART */
+@media (max-width: 1000px) {
+    /* hero */
+    .hero__title{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .advantage{
+        height: 80vh;
+    }
+
+    /* calc */
+    .calculator{
+        padding-top: 0;
+    }
+
+    .calc-inner__wrapper{
+        top: 175px;
+    }
+
+    .calculator__inner-top{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        padding-top: 50px;
+
+    }
+
+    .calc__btn{
+        align-self: flex-start;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .inner-bottom__subtitle{
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    /* trade */
+    .trade__inner-cripto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* info */
+    .info__item{
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-intro--or{
+        order: 1;
+    }
+
+    .item-intro__description{
+        width: 100%;
+    }
+
+    .item-intro{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-intro--fx{
+       margin-top: 30px;
+    }
+
+    /* footer */
+    .footer__Wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer__link{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .suptitle__text{
+        line-height: 14px;
+    }
+}
+/* MEDIA-1000PX-END */
+
+
+
+/* MEDIA-750PX-START */
+@media (max-width: 750px) {
+    /* cripto */
+    .cripto__item{
+        width: 100%;
+    }
+
+    .intro{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .intro__img{
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .hero__title{
+        font-size: 35px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .header__links{
+        display: none;
+    }
+
+    /* trade */
+    .trade__title{
+        width: 100%;
+    }
+
+    .calc-inner__wrapper{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    /* main */
+    .main-title{
+        width: 100%;
+    }
+
+    .advantage__item-suptitle{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .advancetage__item-img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* mining */
+    .mining__wrapper{
+        flex-direction: column;
+    }
+
+    .mining-form{
+        width: 100%;
+    }
+
+    .mining__text{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+/* MEDIA-750PX-END */
+
+
+
+/* MEDIA-550PX-START */
+@media (max-width: 550px) {
+    /* hero */
+    .hero__title{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .hero__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .intro__img{
+        width: 100%;
+    }
+
+    .intro__info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* advantage */
+    .advantage{
+        padding-top: 20px;
+        height: 1000px;
+    }
+
+    .advantage__intro-wrapper{
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+
+    }
+
+    .advancetage__item{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .advantage__items-wrapper{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .advancetage__item__img{
+        position: static;
+        margin-bottom: 15px;
+
+    }
+
+    .advantage__intro-info{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .advantage__intro-text{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* calc */
+    .calc-text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* footer */
+    .footer__bottom-inner{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .footer__pay-wrapper{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .copyright{
+        margin-bottom: 20px;
+    }
+
+    /* main */
+    .main-title{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    /* intro */
+    .item-intro__suptitle{
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .item-intro__description{
+        margin-bottom: 30px;
+    }
+
+    .info-item__img{
+        width: 100%;
+    }
+
+    .info__item{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .info__title{
+        margin-bottom: 30px;
+    }
+
+    /* trade */
+    .trade__title{
+        margin-bottom: 20px;
+    }
+
+    /* mining */
+    .mining{
+        text-align: center;
+    }
+
+    .mining__title{
+        font-size: 20px;
+        line-height: 0;
+    }
+
+    .mining__wrapper{
+        padding: 26px;
+    }
+
+    .mining__description{
+        width: 100%;
+        line-height: 24px;
+    }
+
+    .mining-form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mining__input{
+        width: 100%;
+    }
+
+    .inner-bottom__subtitle{
+        font-size: 15px;
+    }
+}
+
+/* MEDIA-550PX-END */
+
+
+
+/* MEDIA-350PX-START */
+@media (max-width: 350px) {
+    /* advantage */
+    .advantage{
+        height: 1200px;
+    }
+
+    /* calc */
+    .calc-choose__wrapper{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calc-input{
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .calc-select{
+        width: 50%;
+    }
+
+    .calc__btn{
+        align-self: center;
+    }
+
+    .inner-bottom__suptitle{
+        margin-bottom: 10px;
+    }
+
+    /* footer */
+    .footer__pay-title{
+        width: 100%;
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
+/* MEDIA-350PX-END */
