@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- svg -->
+    <svg display="none">
+        <symbol id="search" viewBox="0 0 50 50">
+            <g>
+                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+            </g>
+        </symbol>
+        <symbol id="btn" viewBox="0 0 512 512">
+            <g>
+            <path d="M3,111.67,247.67,418.4c4,5.06,12.6,5.06,16.65,0L509,111.64a15.21,15.21,0,0,0,2.2-13.9,14.2,14.2,0,0,0-1-2.32,10.66,10.66,0,0,0-9.39-5.62H11.14a10.64,10.64,0,0,0-9.38,5.62,13.93,13.93,0,0,0-1,2.27A15.26,15.26,0,0,0,3,111.67Z"/>
+            </g>
+        </symbol>
+    </svg>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__w row">
+                <nav class="header__nav col-8">
+                    <ul class="nav-list">
+                        <li class="nav__item"><a href="#" class="nav__link">BLOG</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">UPDATES</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">RESOURCES</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">COMMUNITY</a></li>
+                    </ul>
+               </nav>
+                <div class="header__search col-4">
+                    <form action="#" class="form">
+                    <input type="text" class="header__input input">
+                    <button class="header__btn btn">
+                        <svg class="searsh">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="select__w">
+                    <select name="language" id="language" class="header__select">
+                        <option type="selected" value="English">English</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                    <svg class="tril">
+                        <use xlink:href="#btn"></use>
+                    </svg>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
