@@ -1,1 +1,7 @@
-.vscode
+.eslintrc.js
+.prettierrc
+.browserslistrc
+node_modules
+package-lock.json
+package.json
+
