@@ -1,0 +1,41 @@
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    border: none;
+    background: $secondary;
+    color: $white;
+    font-weight: 500;
+    padding: 1.1em 1.8em;
+    border-radius: 3em;
+    transition: background-color .1s linear;
+    &--red{
+        background: $red;
+        box-shadow: 0 7px 17px -10px rgba($red, .3);
+        &:hover,
+        &:focus{
+            background-color: darken($red, 10%);
+        }
+    }
+
+    &--blue{
+        background: $blue;
+        box-shadow: 0 7px 17px -10px rgba($blue, .3);
+        &:hover,
+        &:focus{
+            background-color: darken($blue, 5%);
+        }
+    }
+
+    &--brs5{
+        border-radius: .41em;
+    }
+
+    &--sm{
+        padding: .7em 1.25em;
+    }
+
+
+}

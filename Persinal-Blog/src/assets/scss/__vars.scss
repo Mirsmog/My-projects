@@ -1,0 +1,23 @@
+$primary:    #202020; $secondary:  #121212;
+$white:      #fff;
+$black:      #000;
+$blue:       #3137C9;
+$red:        #ED3024;
+
+// fonts
+
+$globff: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+// shadow
+$shadow: 0 5px 15px rgba($black, .45);
+
+// z-index
+$z-index-sidebar: 1000;
+$z-index-header: 1000;
+$z-index-modal: 1010;
+// width
+$sidebar-width: 300px;
+
+// media 
+$tablet-bp: 991px;
+$mobile-bp: 575px;

@@ -1,0 +1,79 @@
+.stories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 195px;
+    grid-column-gap: 1.3rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint($mobile-bp){
+        grid-template-columns: repeat(4, 124px);
+        overflow: auto;
+    }
+}
+
+.stories__item{
+    position: relative;
+    background: transparent;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: $shadow;
+    cursor: pointer;
+
+    &:hover{
+        .stories__preview{
+            transform: scale(1.1);
+            transition-duration: .4s;
+        }
+    }
+
+    &:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-image: linear-gradient(to bottom,
+        rgba($black, .8),
+        rgba($black,  0) 50%,
+        rgba($black, .8)
+        );
+    }
+}
+
+.stories__preview{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transform: scale(1.05);
+    transition: transform .1s ease-in-out;
+}
+
+.stories__title,
+.stories__date{
+    
+    width: 100%;
+    padding: 1.4rem;
+    line-height: 1.3;
+    font-size: 1.2rem;
+    color: $white;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+
+.stories__date{
+    bottom: 0;
+    text-align: right;
+}
+
+.stories__title{
+    top: 0;
+}

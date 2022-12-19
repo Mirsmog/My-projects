@@ -1,0 +1,47 @@
+.cabinet{
+  display: flex;
+
+    @include breakpoint($mobile-bp){
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+.cabinet__form{
+  width: 340px;
+
+    @include breakpoint($mobile-bp){
+      order: 1;
+      width: 100%;
+    }
+}
+
+.cabinet__avatar{
+  flex-grow: 1;
+  margin-left: 11rem;
+  img{
+  display: block;
+  max-width: 150px;
+  margin-bottom: 1.5rem;
+  height: auto;
+}
+    @include breakpoint($mobile-bp){
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      order: -1;
+      // align-items: center;
+      margin-bottom: 2rem;
+    }
+}
+.cabinet__file{
+  font-size: 1.4rem;
+  color: $blue;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+  input{
+    display: none;
+  }
+}

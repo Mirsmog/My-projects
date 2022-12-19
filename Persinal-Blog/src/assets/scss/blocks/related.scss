@@ -1,0 +1,43 @@
+.related {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.related__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint($mobile-bp){
+    flex-direction: column;
+  }
+}
+
+.related__list-item {
+  width: 50%;
+  margin-bottom: 2.5rem;
+
+  @include breakpoint($mobile-bp){
+    width: 100%;
+  }
+}
+
+.related__list-title {
+  font-size: 1.4rem;
+  color: #f3eba2;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 250px;
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.related__list-data {
+  color: #828282;
+  font-size: 1.2rem;
+}
