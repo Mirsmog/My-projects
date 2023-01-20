@@ -1,0 +1,46 @@
+.section-advantage{
+  margin-bottom: var(--article-mb);
+}
+
+
+.advantage__wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem 1.7rem;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+.advantage__item{
+  width: 100%;
+  max-width: 30.6rem;
+  border: 0.05rem solid rgba(#25231C, .5);
+  padding: 2.5rem;
+}
+
+.advantage{
+  &-num{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 5.2rem;
+    line-height: 7.7rem;
+    color: transparent;
+    -webkit-text-stroke: .1rem var(--color-secondary);
+    margin-bottom: 0.6rem;
+  }
+  &-title{
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.9rem;
+  }
+  &-descr{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+  }
+}

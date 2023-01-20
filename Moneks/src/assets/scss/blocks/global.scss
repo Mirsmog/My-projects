@@ -1,0 +1,17 @@
+.main-title__inner{
+  background-color: var(--color-primary);
+  display: inline-block;
+  padding: 1.7rem 5rem 1.7rem 11.6rem;
+
+  &--bc-wt{
+    background-color: var(--color-white);
+  }
+}
+
+.main-title{
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  text-transform: uppercase;
+}

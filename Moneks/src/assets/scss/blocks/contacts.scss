@@ -1,0 +1,215 @@
+.article-contacts{
+  margin-bottom: var(--article-mb);
+}
+
+.contacts__wrapper {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.contacts-img {
+  width: 100%;
+  max-width: 62.5rem;
+  margin-left: -2rem;
+}
+
+.contacts-img-text {
+  --triagle-pos: -50px;
+    border: 0.01rem solid rgba(#413a35, 0.5);
+  background-color: var(--color-white);
+  width: 100%;
+  max-width: 58.7rem;
+  padding: 3rem 6.9rem;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  position: relative;
+  z-index: 4;
+
+
+
+  &::before,
+  &::after {
+    content: "";
+    transform: rotate(82deg);
+    position: absolute;
+    left: 180px;
+    top: var(--triagle-pos);
+    border: 32px solid transparent;
+    border-top: 64px solid rgba(#413a35, 1);
+  }
+
+  &::before {
+    z-index: 2;
+  }
+
+  &::after {
+    border-top: 63px solid var(--color-white);
+    top: calc(var(--triagle-pos) + 1px);
+    z-index: 3;
+  }
+
+  &--after {
+    position: relative;
+    display: block;
+    &::after {
+      content: "";
+      width: 6.6rem;
+      height: 2.2rem;
+      position: absolute;
+      top: -167px;
+      z-index: 100;
+      left: 197px;
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.contacts__form-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 63.3rem;
+  padding-top: 3rem;
+  // justify-content: space-between;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form__title {
+  font-family: Roboto;
+  color: var(--color-primary);
+  font-size: 3.3rem;
+  line-height: 3.7rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contact__input {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem 3.6rem;
+  border: 0.01rem solid rgba(#413a35, 0.5);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-family: Roboto;
+  margin-bottom: 1.4rem;
+
+  &--area {
+    // height: 8.8rem;
+    margin-bottom: 3.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3.2rem 3.6rem;
+  }
+
+  &::placeholder {
+    color: rgba(#413a35, 0.5);
+  }
+}
+
+.contact-checkbox {
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.contact-checkbox__wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.contact-label {
+  user-select: none;
+  position: relative;
+  padding-left: 2.5rem;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--color-white);
+    width: 20px;
+    border: 0.01rem solid rgba(#413a35, 0.5);
+    height: 20px;
+    top: -0.2rem;
+    cursor: pointer;
+    left: -0.8rem;
+  }
+
+  &::after {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    opacity: 0;
+    left: -.1rem;
+    top: .2rem;
+    width: 6px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  transition: opacity .2s ease-in-out;
+  }
+}
+
+.contact-checkbox:checked ~
+.contact-label::before{
+  background-color: var(--color-primary);
+}
+
+.contact-checkbox:checked ~
+.contact-label::after{
+  opacity: 1;
+}
+
+
+.contact__btn{
+  background-color: var(--color-secondary);
+  font-weight: 600;
+  font-family: Roboto;
+  font-size: 3.2rem;
+  line-height: 2.6rem;
+  padding: 3.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  margin-bottom: 2.3rem;
+}
+
+.contact-copyright{
+  position: relative;
+  margin-left: 2.1rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--color-secondary);
+  user-select: none;
+
+  &::before{
+    position: absolute;
+    content: "";
+    left: -2.1rem;
+    // top: 0.2rem;
+    display: block;
+    width: 0.9rem;
+    height: 1.1rem;
+    background-image: url(/assets/images/icons/lock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

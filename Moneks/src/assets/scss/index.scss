@@ -1,0 +1,31 @@
+@import 'libs/reset';
+@import 'libs/vars';
+@import 'libs/fonts';
+
+
+
+html{
+    font-size: 65.2%;
+    line-height: 1.2;
+}
+
+body {
+    background-color: var(--color-white);
+    font-size: 16px;
+    color: var(--color-gray);
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+// blocks
+@import 'blocks/global';
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/hero';
+@import 'blocks/button';
+@import 'blocks/products';
+@import 'blocks/about';
+@import 'blocks/advantages';
+@import 'blocks/contacts';
+@import 'blocks/footer';

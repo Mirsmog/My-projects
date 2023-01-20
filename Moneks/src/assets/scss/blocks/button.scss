@@ -1,0 +1,20 @@
+.btn{
+  background-color: transparent;
+  font-family: Roboto;
+
+  &--primary{
+    background-color: var(--color-primary);
+    transition: box-shadow .1s ease-in-out;
+    &:hover{
+      box-shadow: 0px 0px 5px #ffc501;
+    }
+  }
+}
+
+.hero__btn{
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  padding: 2.4rem 9rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
