@@ -1,0 +1,29 @@
+@import "./reset";
+@import "./fonts";
+@import "./breakpoints";
+@import "./mixins/mixin-breakpoint";
+@import "./colors";
+@import "./swiper/swiper";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "gothampro", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+@import "./blocks/global";
+@import "./blocks/shadow";
+@import "./blocks/button";
+@import "./blocks/container";
+@import "./blocks/header";
+@import "./blocks/car-park";
+@import "./blocks/advantages";
+@import "./blocks/our-goal";
+@import "./blocks/contacts";
+@import "./blocks/footer";

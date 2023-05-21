@@ -1,0 +1,56 @@
+.header {
+  margin-top: 3rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include breakpoint($lg) {
+  }
+}
+
+.logo__img {
+  width: 20rem;
+
+  @include breakpoint($md) {
+    width: 17rem;
+  }
+}
+
+.nav-list {
+  display: flex;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #85aaab;
+
+  @include breakpoint($md) {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoint($sm) {
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.nav__item-link {
+  color: inherit;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: all 0.2s ease-in-out;
+  &:hover,
+  &:focus {
+    color: var(--color-hover);
+    border-bottom: 0.2rem solid var(--color-hover);
+  }
+}

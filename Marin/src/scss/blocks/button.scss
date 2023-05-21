@@ -1,0 +1,33 @@
+.btn{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 4.2rem;
+  border-radius: 1rem;
+  transition: .1s ease-out;
+  font-size: 1.8rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 2.4rem;
+
+  &.btn--empty{
+    background-color: transparent;
+    border: .2rem solid var(--color-primary);
+    padding: .8rem 6rem;
+    margin-right: 3rem;
+
+    @include breakpoint($md){
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus{
+      border-color: #85AAAB;
+    }
+  }
+
+  &:hover,
+  &:focus{
+    background-color: #85AAAB;
+  }
+}

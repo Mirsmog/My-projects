@@ -1,0 +1,82 @@
+.about-me {
+  background-image: url("/src/img/Rectangle.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 0;
+
+  @include breakpoint($md) {
+    padding: 5rem 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($lg) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint($lg) {
+      order: 1;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: var(--color-white);
+    font-family: Oswald-Bold;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+
+  &__descr {
+    font-size: 1.6rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-white);
+    width: 100%;
+    max-width: 62.5rem;
+
+    @include breakpoint($lg) {
+      margin: 2rem 0;
+    }
+    @include breakpoint($sm) {
+      font-size: 1.4rem;
+      margin: 1rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__btn-wrapper {
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+
+    @include breakpoint($lg) {
+      margin-top: 2rem;
+    }
+    @include breakpoint($md) {
+      gap: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @include breakpoint($sm){
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+}

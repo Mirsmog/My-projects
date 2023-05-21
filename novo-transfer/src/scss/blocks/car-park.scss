@@ -1,0 +1,103 @@
+.section-car-park {
+  padding: 10rem 0 8rem 0;
+  background-color: $white;
+
+  @include breakpoint($md){
+    padding-top: 30rem;
+  }
+
+  &.open .services-list {
+    height: 100%;
+    opacity: 1;
+    pointer-events: all;
+
+  }
+  &.open .eye {
+    display: none;
+  }
+  &.open .eye-slash {
+    display: block;
+  }
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+
+  @include breakpoint($xl){
+    justify-content: center;
+  }
+  @include breakpoint($md){
+    display: none;
+  }
+}
+
+.service{
+  width: 36.6rem;
+  text-align: left;
+  margin-bottom: 5.75rem;
+
+}
+
+.services-name{
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: $primary;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.services-descr{
+  margin-top: 3rem;
+
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: $black;
+  width: 30rem;
+}
+
+.eye-slash {
+  display: none;
+}
+
+.car-park {
+  display: flex;
+  justify-content: space-between;
+
+  &__subtitle {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    color: $black;
+  }
+
+  &__img {
+    width: 20.1rem;
+    margin-top: -2rem;
+  }
+
+  &-left {
+    width: 60rem;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn--car-park {
+
+  margin-top: 5.6rem;
+  display: flex;
+  gap: .5em;
+
+}

@@ -1,0 +1,76 @@
+// line 179
+//=====================//
+.fix--left{
+  margin-left: -2rem;
+}
+
+
+.section-advantages-services {
+  background-image: url("./src/img/bg-about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 8.6rem;
+}
+
+.advantages {
+  padding: 6rem 0 7.2rem;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem;
+    margin-top: 5.8rem;
+
+    @include breakpoint($xl){
+      justify-content: center;
+    }
+  }
+}
+
+.advantage-item {
+  padding: 5rem 1.5rem 1.8rem;
+  width: 25.4rem;
+  height: 26.4rem;
+  color: $white;
+  border: 0.1rem solid #9a2e9d;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  &__name {
+    margin-top: auto;
+    line-height: 2.5rem;
+  }
+
+  &:hover {
+    background-color: $white;
+    padding: 0rem 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  &:hover &__img {
+    display: none;
+  }
+  &:hover &__name {
+    font-size: 2rem;
+    color: #8c1e8e;
+  }
+
+  &:hover .item-back__descr {
+    display: block;
+  }
+
+  .item-back__descr {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $black;
+    display: none;
+    margin-top: auto;
+  }
+}

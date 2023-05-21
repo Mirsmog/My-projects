@@ -1,0 +1,109 @@
+.reviews {
+  padding: 6rem 0rem 5rem;
+  text-align: center;
+
+  @include breakpoint($md) {
+    padding: 5rem 0;
+  }
+
+  &__inner {
+    padding: 0 8rem;
+
+    @include breakpoint($xs) {
+      padding: 0;
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #adddde;
+    width: 100%;
+    max-width: 60rem;
+    margin-top: 5rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 45%;
+      right: -6rem;
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      border-top: 0.4rem solid #adddde;
+      border-right: 0.4rem solid #adddde;
+      border-radius: 0.3rem;
+      transform: rotate(45deg);
+      cursor: pointer;
+      padding: 1.2rem;
+
+      @include breakpoint($xs) {
+        top: 12%;
+        right: 5rem;
+        border-top: 0.4rem solid var(--color-white);
+        border-right: 0.4rem solid var(--color-white);
+      }
+    }
+
+    &::after {
+      left: -6rem;
+      transform: rotate(-135deg);
+      @include breakpoint($xs) {
+        left : 5rem;
+      }
+    }
+  }
+}
+
+.reviews-list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+}
+
+.reviews-item__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint($md) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.review-item__img {
+  margin-right: 3.2rem;
+
+  @include breakpoint($md) {
+    margin-right: 0;
+  }
+}
+
+.reviews-item__name {
+  font-size: 1.8rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.reviews-item__descr {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-black);
+  margin-top: 3rem;
+  font-weight: 300;
+
+  @include breakpoint($md) {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    height: 12rem;
+    overflow: auto;
+  }
+
+  @include breakpoint($xs){
+    height: 100%;
+  }
+}

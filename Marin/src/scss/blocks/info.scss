@@ -1,0 +1,62 @@
+.info {
+  background-image: url("/src/img/road-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+
+  @include breakpoint($md){
+    padding: 5rem 0;
+  }
+}
+
+.info__inner {
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-white);
+
+  @include breakpoint($md){
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 31rem;
+
+  &-num {
+    font-size: 4.8rem;
+    font-weight: 800;
+    font-family: Montserrat;
+
+    @include breakpoint($md) {
+      font-size: 4rem;
+    }
+  }
+  &-name {
+    font-family: Oswald-Bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-top: 2.9rem;
+
+    @include breakpoint($md) {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
+  &-descr {
+    font-family: Montserrat;
+    line-height: 2.4rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top: 2.9rem;
+
+    @include breakpoint($md) {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.appointment {
+  padding: 6rem 0;
+
+  @include breakpoint($md) {
+    padding: 5rem 0;
+  }
+
+  &__inner {
+    text-align: center;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-form__inner {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0rem 4rem;
+
+    @include breakpoint($sm){
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  & .btn {
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-top: 0.7rem;
+  }
+}
+
+.form__inner-left,
+.form__inner-right {
+  width: 32%;
+
+  @include breakpoint($md) {
+    width: 50%;
+  }
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+
+}
+
+.form__inner-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+
+  .form__input:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.form__input {
+  border: 0.1rem solid var(--color-black);
+  border-radius: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--color-white);
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+[data-place] {
+  color: gray;
+}
+
+[data-selected] {
+  color: var(--color-black);
+}
+
+.form__area {
+  resize: none;
+  height: 100%;
+}
+
+.checkbox-label {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  width: 32.6rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+}
+
+.select::after {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid var(--color-black);
+  // padding: 0 8px;
+  position: absolute;
+  right: 2rem;
+  top: 40%;
+  z-index: 1;
+}
+
+select {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

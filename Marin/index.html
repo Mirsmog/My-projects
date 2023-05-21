@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marin</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <img class="logo__img" src="./src/img/logo.png" alt="logo">
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Главная</a></li>
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Мероприятия</a></li>
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Контакты</a></li>
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Блог</a></li>
+            </ul>
+          </nav>
+
+          <nav class="burger">
+            <ul class="burger__list">
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Главная</a></li>
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Мероприятия</a></li>
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Контакты</a></li>
+              <li class="nav-list__item"><a class="nav__item-link" href="#">Блог</a></li>
+            </ul>
+          </nav>
+
+          <div class="burger-menu" id="burger-btn">
+            <div class="icon"></div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="main-title main-title--white">
+              Ваш личный психолог
+              В Кривом Роге
+            </h1>
+            <div class="hero__subtitle">
+              Личные, семейные и
+              групповые консультаци
+            </div>
+            <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <h2 class="none">services</h2>
+          <ul class="services-list">
+            <li class="services__item">
+              <img class="services-img" src="./src/img/items/Vector.svg" alt="services-img">
+              <div class="services-name">Личные консультации</div>
+              <div class="services-descr ">Достижения поставленных целей
+                бывает сложной задачей, но при правильной поддержке нет ничего не возможного</div>
+            </li>
+            <li class="services__item">
+              <img class="services-img" src="./src/img/items/family-room.svg" alt="services-img">
+              <div class="services-name">Семейная терапия</div>
+              <div class="services-descr">У любой семьи бывают кризисные ситуации, поэтому в такие моменты важно
+                поддерживать друг друга</div>
+            </li>
+            <li class="services__item">
+              <img class="services-img" src="./src/img/items/network.svg" alt="services-img">
+              <div class="services-name">Сенситивные группы</div>
+              <div class="services-descr">Групповые занятия — отличное место, чтобы научиться общаться с окружающими
+                людьми и раскрыть свой потенциал</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-me">
+        <div class="container">
+          <div class="about-me__inner">
+            <div class="about-me__left">
+              <h2 class="about-me__title">Немного обо мне</h2>
+              <div class="about-me__descr">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта
+                парадигматическая страна, в которой жаренные члены предложения залетают прямо.
+              </div>
+              <div class="about-me__btn-wrapper">
+                <a class="btn btn--empty" href="#">Задать вопрос</a>
+                <a class="btn">Хочу консультацию</a>
+              </div>
+            </div>
+            <div class="about-me__right">
+              <img class="about-me__img" src="./src/img/about-photo.webp" alt="about-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment">
+        <div class="container">
+          <div class="appointment__inner">
+            <h2 class="main-title">Записаться на прием</h2>
+            <form class="appointment-form" action="/">
+              <div class="appointment-form__inner">
+                <div class="form__inner-left">
+                  <input class="form__input" type="text" placeholder="Ваше имя *">
+                  <input class="form__input" type="tel" placeholder="Ваш телефон *">
+                  <div class="select">
+                    <select class="form__input form__input--select" id="theme" name="theme" data-place
+                      onchange="this.setAttribute('data-selected', true)">
+                      <option class="option-gray" value="1" disabled selected hidden>Тема встречи *</option>
+                      <option value="2">Lorem ipsum dolor sit.</option>
+                      <option value="3">Lorem ipsum dolor sit.</option>
+                      <option value="4">Lorem ipsum dolor sit.</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__inner-right">
+                  <textarea class="form__area form__input" alt="prefer" placeholder="Пожелания"></textarea>
+                </div>
+              </div>
+              <label class="checkbox-label"> <input class="form__checkbox" type="checkbox">
+                Я согласен с политикой конфиденциальности
+              </label>
+              <button class="btn" type="submit" aria-label="Отправить заявку">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <h2 class="none">info</h2>
+          <ul class="info__inner">
+            <li class="info__item">
+              <div class="info__item-num">120 мин</div>
+              <div class="info__item-name">Время консультации</div>
+              <div class="info__item-descr">Оптимально для того, чтобы найти выход и сделать очередной шаг</div>
+            </li>
+            <li class="info__item">
+              <div class="info__item-num">от 200 грн</div>
+              <div class="info__item-name">Стоимость</div>
+              <div class="info__item-descr">Цена доступна для любого человека, нуждающегося в помощи</div>
+            </li>
+            <li class="info__item">
+              <div class="info__item-num">75+</div>
+              <div class="info__item-name">Довольных клиентов</div>
+              <div class="info__item-descr">Результат — улыбка на лице и ощущение счастья</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="main-title">Отзывы клиентов</h2>
+          <div class="reviews__inner">
+            <ul class="reviews-list">
+              <li class="reviews-list__item">
+                <div class="reviews-item__header">
+                  <img class="review-item__img" src="./src/img/girl.png" alt="person-img">
+                  <div class="reviews-item__name">Марина, 25 лет</div>
+                </div>
+                <div class="reviews-item__descr">Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация
+                  казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от
+                  огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое
+                  спасибо Валентину.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <h2 class="main-title main-title--white">Последние статьи</h2>
+          <ul class="news-list">
+            <li class="news__item">
+              <a href="#" class="news__link">
+                <img src="./src/img/news/news-1.webp" alt="news-img" class="news__item-img">
+                <div class="news__item-descr">Жить, а не бояться:
+                  как справляться с канцерофобией</div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#" class="news__link">
+                <img src="./src/img/news/news-2.webp" alt="news-img" class="news__item-img">
+                <div class="news__item-descr">Брат мой, враг мой: почему враждуют братья и сестры?</div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#" class="news__link">
+                <img src="./src/img/news/news-3.webp" alt="news-img" class="news__item-img">
+                <div class="news__item-descr">8 советов, как оставаться продуктивным и не сойти с ума</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="FAQS">
+        <div class="container">
+          <h2 class="main-title">Частые вопросы</h2>
+          <div class="faq__inner">
+
+            <ul class="faqs-list">
+              <li class="faq__item active">
+                <div class="faq__item-name">Какой у вас график работы? </div>
+                <div class="faq__item-descr">Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00</div>
+              </li>
+              <li class="faq__item">
+                <div class="faq__item-name">Сколько длится сессия?</div>
+                <div class="faq__item-descr">Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00</div>
+              </li>
+              <li class="faq__item">
+                <div class="faq__item-name">Сколько стоит консультация?</div>
+                <div class="faq__item-descr">Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00
+                  ЯЯ работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00 работаю провожу консультации с понедельника по
+                  субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00
+                </div>
+              </li>
+              <li class="faq__item">
+                <div class="faq__item-name">Что из себя представляют консультации?</div>
+                <div class="faq__item-descr">Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00
+                  Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                  Записаться на прием можно в любой день с 9:00 до 21:00</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <div class="contact__item">
+              <h2 class="main-title main-title--blue">Контакты</h2>
+              <a href="#" class="contact-link">Тел: +380 99 123 45 67</a>
+              <a href="#" class="contact-link">Viber: +380 99 123 45 67</a>
+              <a href="#" class="contact-link">Telegram: @phyholog_sergei</a>
+              <a href="#" class="contact-link">Instagram: @phyholog_sergei</a>
+              <a href="#" class="contact-link">E-mail: phyholog_sergei@gmail.com</a>
+              <div class="contact-link">Адрес: Ул. Центральная д. 10, офис 1</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="appointment-bot">
+        <div class="container">
+          <h2 class="main-title">
+            Записаться со скидкой 50 грн
+          </h2>
+          <form class="appointment-bot-form" action="/">
+            <div class="form-top">
+              <input class="form__input" type="text" placeholder="Ваше имя *">
+              <input class="form__input" type="text" placeholder="Ваш телефон *">
+              <button class="btn">Записаться со скидкой</button>
+            </div>
+            <label class="checkbox-label"> <input class="form__checkbox" type="checkbox">
+              Я согласен с политикой конфиденциальности
+            </label>
+
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <img src="./src/img/logo.png" alt="" class="logo__img">
+          <div class="social__wrapper">
+
+            <a href="#" class="social-item">
+              <img src="./src/img/socials/instagram-logo.svg" alt="instagram-logo">
+              <div class="social-text">@phyholog_sergei</div>
+            </a><a href="#" class="social-item">
+              <img src="./src/img/socials/viber.svg" alt="instagram-logo">
+              <div class="social-text">+380 99 123 45 67</div>
+            </a><a href="#" class="social-item">
+              <img src="./src/img/socials/telegram.svg" alt="instagram-logo">
+              <div class="social-text">@phyholog_sergei</div>
+            </a><a href="#" class="social-item">
+              <img src="./src/img/socials/phone-call.svg" alt="instagram-logo">
+              <div class="social-text">+380 99 123 45 67</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="/src/main.ts" type="module"></script>
+</body>
+
+</html>

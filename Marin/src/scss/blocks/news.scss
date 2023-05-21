@@ -1,0 +1,57 @@
+.news {
+  background-image: url("/src/img/news-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 0 5rem;
+
+  @include breakpoint($md){
+    padding: 5rem 0;
+  }
+
+  &-list {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($md) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5rem;
+    }
+  }
+}
+
+.news__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-white);
+  font-family: Oswald-Bold;
+  max-width: 33.4rem;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-right: 9.4rem;
+
+    @include breakpoint($md) {
+      margin-right: 0;
+    }
+
+  }
+
+  &-img {
+    width: 100%;
+  }
+
+  &-descr {
+    color: inherit;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-top: 2.4rem;
+  }
+}
+
+.news__link {
+  color: var(--color-white);
+}

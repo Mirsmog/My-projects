@@ -1,0 +1,20 @@
+.main-title{
+  font-size: 5rem;
+  line-height: 4.7rem;
+  font-weight: 700;
+  color: $primary;
+
+  &--white{
+    color: $white;
+  }
+
+  @include breakpoint($lg){
+    font-size: 4rem;
+  }
+}
+
+.wrapper{
+  max-width: 140rem;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba($black, .2);
+}

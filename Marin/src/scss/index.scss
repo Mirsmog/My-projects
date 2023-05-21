@@ -1,0 +1,53 @@
+@import './reset';
+@import './fonts';
+@import './breakpoints';
+@import './_mixins';
+
+:root{
+  --color-primary:   #2D5E5E;
+  --color-secondary: #ADDDDE;
+  --color-black:     #000000;
+  --color-white:     #ffffff;
+  --color-hover:     #6DE1E3;
+
+  --content-max-width: 144rem;
+}
+
+.wrapper{
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+html{
+  font-size: 62.5%;
+
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+
+body{
+  background-color: #E5E5E5;
+  font-size: 1.6rem;
+  font-family: Montserrat
+}
+
+
+// BLOCKS
+@import './blocks/global';
+@import './blocks/burger';
+@import './blocks/custom-checkbox';
+@import './blocks/button';
+@import './blocks/container';
+@import './blocks/header';
+@import './blocks/hero';
+@import './blocks/services';
+@import './blocks/about-me';
+@import './blocks/appointment';
+@import './blocks/info';
+@import './blocks/reviews';
+@import './blocks/news';
+@import './blocks/faqs';
+@import './blocks/contacts';
+@import './blocks/appointment-bot';
+@import './blocks/footer';

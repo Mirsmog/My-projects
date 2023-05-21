@@ -1,0 +1,80 @@
+.section-contacts{
+  background-color: $white;
+
+}
+
+.contacts{
+  padding: 10rem 0;
+  padding-right: 4rem;
+
+  &__wrapper{
+    // display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+
+    @include breakpoint($md){
+      flex-direction: column;
+      align-items: center;
+      // width: 40rem;
+    }
+  }
+
+  @include breakpoint($lg){
+    padding-right: 0;
+  }
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($lg){
+    width: 54.5rem;
+  }
+
+  @include breakpoint($lg){
+    &:last-child,
+    &:first-child{
+      order: -1;
+    }
+  }
+
+  &__header{
+    margin: 1rem 0;
+  }
+
+  &__text{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 500;
+    color: $black;
+    margin: .5rem 0;
+    max-width: 60rem;
+
+  }
+
+  &__mail{
+    color: $primary;
+    margin: 0;
+    &:hover{
+      text-decoration: underline;
+    }
+
+    @include breakpoint($lg){
+      &--none{
+        display: none;
+      }
+    }
+  }
+}
+
+.contact-left{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include breakpoint($lg){
+    align-items: center;
+    flex-direction: column;
+  }
+}

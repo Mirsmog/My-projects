@@ -1,0 +1,130 @@
+.burger-menu {
+  // BURGER SIZE (NUMBER MUST / 3)
+  --main-size: 36px;
+
+  // DON'T TOUCH IT IF YOU DON'T UNDERSTAND
+  //=========================================================================
+  --main-item-size: calc(var(--main-size) / 3);
+  --negative: calc(var(--main-size) - (var(--main-size) * 2));
+  --item-negative: calc(var(--main-item-size) - (var(--main-item-size) * 2));
+
+  --box-width: var(--main-size);
+  --box-height: var(--main-size);
+
+  --item-with: var(--main-size);
+  --item-width: var(--main-size);
+  --item-width-negative: var(--negative);
+
+  --item-height: calc(var(--main-item-size) / 4);
+  --item-center-top: var(--main-item-size);
+  --item-top: var(--main-item-size);
+  --item-top-negative: var(--item-negative);
+
+  --item-open-before: calc(var(--item-width) / 4.6),
+    calc(var(--item-width) / 4.6);
+  --item-open-after: calc(var(--item-width) / 5),
+    calc(var(--item-width-negative) / 5);
+
+  --item-rotate: 45deg;
+  --item-rotate-negative: -45deg;
+  --item-scale: 1.26;
+  // DON'T TOUCH IT IF YOU DON'T UNDERSTAND
+  //=========================================================================
+
+  position: relative;
+  top: 0;
+  right: 0;
+
+  width: var(--box-width);
+  height: var(--box-height);
+
+  transition-duration: 0.5s;
+  z-index: 1000;
+
+  display: none;
+
+  @include breakpoint($sm){
+    display: block;
+  }
+
+  .icon {
+    pointer-events: none;
+    transition-duration: 0.5s;
+    position: absolute;
+    height: var(--item-height);
+    width: var(--item-width);
+    top: var(--item-top);
+    background-color: var(--color-white);
+
+    &:before {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: var(--item-width);
+      height: var(--item-height);
+      background-color: var(--color-white);
+      content: "";
+      top: var(--item-top-negative);
+    }
+
+    &:after {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: var(--item-width);
+      height: var(--item-height);
+      background-color: var(--color-white);
+      content: "";
+      top: var(--item-top);
+    }
+  }
+
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(var(--item-rotate)) scaleX(var(--item-scale))
+          translate(var(--item-open-before));
+      }
+
+      &:after {
+        transform: rotateZ(var(--item-rotate-negative))
+          scaleX(var(--item-scale)) translate(var(--item-open-after));
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  transition: .2s ease-in-out;
+  transform: translateX(100%);
+  z-index: 1000;
+  display: none;
+
+  &.active{
+    transform: translateX(0);
+  }
+
+  &__list{
+    font-size: 4rem;
+    line-height: 5.9rem;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  @include breakpoint($sm){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

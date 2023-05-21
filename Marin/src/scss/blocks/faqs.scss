@@ -1,0 +1,106 @@
+.FAQS {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.faq__inner {
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+.faq__item {
+  text-align: left;
+  cursor: pointer;
+  height: auto;
+  max-height: 5rem;
+  padding-left: 5rem;
+  transition: max-height 1.5s;
+
+  &.active &-descr {
+    opacity: 1;
+  }
+
+  &.active {
+    max-height: 40rem;
+  }
+
+  &.active &-name {
+    color: var(--color-primary);
+  }
+
+  &.active &-name {
+    color: var(--color-primary);
+  }
+  &.active &-name::before {
+    background-color: var(--color-primary);
+    transform: rotate(45deg);
+  }
+  &.active &-name::after {
+    background-color: var(--color-primary);
+    transform: rotate(-45deg);
+  }
+
+  &-name {
+    font-size: 2.4rem;
+    font-family: Oswald-Bold;
+    line-height: 3.2rem;
+    position: relative;
+
+    @include breakpoint($xs) {
+      font-size: 2rem;
+    }
+
+    &::before {
+      content: "";
+      width: 2rem;
+      height: 0.2rem;
+      background-color: var(--color-black);
+      position: absolute;
+      left: -5rem;
+      top: 1.5rem;
+    }
+
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 0.2rem;
+      background-color: var(--color-black);
+      position: absolute;
+      left: -5rem;
+      top: 1.5rem;
+      transform: rotate(90deg);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+
+      @include breakpoint($xs){
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &-descr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 90rem;
+    font-size: 1.6rem;
+    font-family: Montserrat;
+    line-height: 2.4rem;
+    color: var(--color-black);
+    font-weight: 500;
+    opacity: 0;
+    transition: all 1s;
+
+    @include breakpoint($xs) {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-top: 0;
+    }
+  }
+}

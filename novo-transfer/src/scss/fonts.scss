@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'gothampro';
+  src: url(../fonts/gothampro.eot);
+  src: url(../fonts/gothampro.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/gothampro.woff) format('woff'),
+       url(../fonts/gothampro.ttf) format('truetype'),
+       url(../fonts/gothampro.woff2) format('woff2'),
+       url(../fonts/gothampro.svg#gothampro) format('svg'),
+       url(../fonts/gothampro.otf) format('otf');
+  font-weight: 400;
+}
+
+@font-face {
+font-family: 'gothampro';
+  src: url(../fonts/gothampro_medium.eot);
+  src: url(../fonts/gothampro_medium.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/gothampro_medium.otf) format('otf'),
+       url(../fonts/gothampro_medium.svg#gothampro_medium) format('svg'),
+       url(../fonts/gothampro_medium.ttf) format('truetype'),
+       url(../fonts/gothampro_medium.woff) format('woff'),
+       url(../fonts/gothampro_medium.woff2) format('woff2');
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'gothampro';
+  src: url(../fonts/gothampro_bold.eot);
+  src: url(../fonts/gothampro_bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/gothampro_bold.otf) format('otf'),
+       url(../fonts/gothampro_bold.svg#gothampro_bold) format('svg'),
+       url(../fonts/gothampro_bold.ttf) format('truetype'),
+       url(../fonts/gothampro_bold.woff) format('woff'),
+       url(../fonts/gothampro_bold.woff2) format('woff2');
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.appointment-bot{
+  padding: 6rem 0;
+  text-align: center;
+
+  label{
+    display: inline-block;
+  }
+
+  &-form{
+    margin-top: 6rem;
+  }
+}
+
+.form-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+
+  @include breakpoint($lg){
+    justify-content: center;
+    gap: 2rem;
+  }
+
+
+  input,
+  button{
+    width: 32%;
+    min-width: 30.9rem
+  }
+}
